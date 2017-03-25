@@ -205,7 +205,7 @@ export default class extends Component {
 
     // Default: horizontal
     initState.dir = props.horizontal === false ? 'y' : 'x'
-    initState.width = props.width || width
+    initState.width = props.width || width + 3;   // <--shade hack: to fix resolution problems that sometimes occured
     initState.height = props.height || height
     newInternals.offset = {}
 
